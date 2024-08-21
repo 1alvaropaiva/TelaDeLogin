@@ -7,6 +7,7 @@ class Application():
         self.root = root
         self.tela()
         self.frames_da_tela()
+        self.criador_de_botoes()
         root.mainloop()
     def tela(self):
         self.root.title("Alvaro")
@@ -21,5 +22,9 @@ class Application():
 
         self.frame_2 = Frame(self.root, bd=4, bg='red', highlightbackground='white', highlightthickness=2)
         self.frame_2.place(relx=0.02, rely=0.52, relwidth=0.96, relheight=0.46)
+    def criador_de_botoes(self):
+        self.bt_limpar = Button(self.frame_1)
+        self.bt_limpar.place(relx=0.2, rely=0.1)
+
 
 Application()
